@@ -127,7 +127,6 @@ function closeTrailer() {
 
 closeBtn.onclick = closeTrailer;
 
-// Pop-up player functions
 function openPopup(trailerFile) {
   popupVideoSource.src = `trailers/${trailerFile}`;
   popupVideo.load();
@@ -165,5 +164,4 @@ function playFromCard(movieId) {
   if (!movie) return;
 
   openPopup(movie.trailer);
-
 }
